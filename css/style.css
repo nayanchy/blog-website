@@ -358,12 +358,16 @@ input[type="search"]:focus {
   cursor: pointer;
 }
 
-footer {
-  padding: 10%;
+footer{
   background: #141313;
   color: #fff;
+}
+
+.footer {
+  padding: 5% 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 80px;
 }
 
 .footer-social ul {
@@ -374,7 +378,7 @@ footer {
 .footer-social ul li {
   list-style: none;
   display: inline-block;
-  padding-right: 10px;
+  margin: 0 10px 0 0;
 }
 
 .footer-social ul li:last-child {
@@ -382,13 +386,91 @@ footer {
 }
 
 .footer-social ul li a {
-  color: #fff;
-  font-size: 18px;
-  line-height: 30px;
-  width: 30px;
-  height: 30px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  float: left;
+  background: rgba(255,255,255,.05);
   border-radius: 50%;
-  background-color: #222222;
+  position: relative;
+}
+
+.footer-social ul li a .fab{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#fff;
+  font-size: 24px;
+}
+
+.footer-intro{
+  font-weight: 300;
+}
+
+.footer-destination ul,
+.footer-archives ul {
+  padding: 0;
+}
+
+.footer-destination ul li,
+.footer-archives ul li {
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-destination ul li:last-child,
+.footer-archives ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer-destination ul li a,
+.footer-archives ul li a {
   color: #fff;
-  margin: 0 3px 3px 0;
+  font-weight: 200;
+}
+
+.footer-destination ul li a span,
+.footer-archives ul li a span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer-heading {
+  font-weight: 400;
+  color:#fff;
+}
+
+.footer-contact ul{
+  padding: 0;
+}
+
+.footer-contact ul li{
+  list-style: none;
+  display: table;
+  padding-bottom:20px;
+}
+
+.footer-contact ul li:last-child{
+  padding-bottom:0;
+}
+
+.address-icon{
+  display: table-cell;
+}
+
+.contact-text{
+  display: table-cell;
+  padding-left:30px;
+  font-weight: 300;
+}
+
+.copyright-text{
+  padding-bottom: 20px;
 }
